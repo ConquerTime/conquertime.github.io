@@ -27,7 +27,7 @@ macOS上自带了Git系统, 不需要额外安装, 当然如果需要重新安�
 
 > git version 2.19.0
 
-### [安装-node-js](#安装-node-js)
+### [安装 node js](#安装-node-js)
 
 直接[官网](https://nodejs.org/zh-cn/)下载, 然后下一步下一步安装完成, node.js和npm都会安装完成.
 
@@ -45,7 +45,7 @@ node-v
 
 > 6.13.4
 
-### [#安装-Hexo](#安装-Hexo)安装 Hexo
+### [安装 Hexo](#安装-Hexo)
 
 在终端工具上输入命令稍等片刻完成安装
 
@@ -77,8 +77,7 @@ node-v
 > tz: 2019c
 > unicode: 12.1
 
-### [#初始化-hexo-并启动服务](#初始化-hexo-并启动服务)初始化 hexo 并启动服务
-
+### [初始化 hexo 并启动服务](#初始化-hexo-并启动服务)
 在自己用户名目录下, 创建 hexo 文件夹(名字可以自己改), 并进入文件下目录, 执行指令完成初始化
 
     mkdir hexo   ## 创建hexo文件夹
@@ -100,11 +99,11 @@ node-v
 
 ---
 
-## [#Github-托管环境](#Github-托管环境)Github 托管环境
+## [Github 托管环境](#Github-托管环境)
 
 需要注册Github账号, 创建Github公开Repository, 在macOS上安装Git部署器, 在设置文件中将macOS-hexo和Github-pages连接起来, 进行发布.
 
-### [#创建Github-Repository](#创建Github-Repository)创建Github Repository
+### [创建Github Repository](#创建Github-Repository)
 
 创建新库的设置页面有3个注意事项
 
@@ -123,7 +122,7 @@ node-v
 > Your site is published at [https://***username***.github.io](https://username.github.io)
 > 这就代表Pages已经开通
 
-### [#安装本地Git部署器](#安装本地Git部署器)安装本地Git部署器
+### [安装本地Git部署器](#安装本地Git部署器)
 
 1. 在macOS中打开终端工具, 进入hexo文件夹, 输入以下指令
 
@@ -169,7 +168,7 @@ node-v
     hexo deploy  ## 重新执行, 通常会成功解决无法解析的问题
     
 
-### [#创建新博客](#创建新博客)创建新博客
+### [创建新博客](#创建新博客)
 
     
 
@@ -183,7 +182,7 @@ node-v
 > 自动产生新草稿文件, /hexo/source/_drafts/new_draft_name.md
 > 将草稿发布成正式
 
-### [#发布新博客](#发布新博客)发布新博客
+### [发布新博客](#发布新博客)
     
 
     hexo clean
@@ -196,17 +195,17 @@ node-v
     hexo n == hexo new  ## 一些快捷键
     
 
-### [#安装Next-Theme](#安装Next-Theme)安装Next Theme
+### [安装Next-Theme](#安装Next-Theme)
 
 1. [在此地址来下载](https://github.com/theme-next/hexo-theme-next/releases)
 2. 安装在 /hexo/themes/ 路径上
 3. [详细的设置参考地址](https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/README.md)
 
-## [#MWeb-编辑环境](#MWeb-编辑环境)MWeb 编辑环境
+## [MWeb 编辑环境](#MWeb-编辑环境)
 
 [下载MWeb](http://zh.mweb.im/index.html), 利用MWeb的外部模式, 可以将MWeb与Hexo结合起来, 对博客高效管理
 
-### [#设置MWeb](#设置MWeb)设置MWeb
+### [设置MWeb](#设置MWeb)
 
 1. 通过 文件-打开外部模式
 2. 可以在偏好设置中勾选”启动时默认打开外部模式”
@@ -216,7 +215,7 @@ node-v
 
 5. 设置完成后, 可以在MWeb里面看到hexo文章, 也可以新建博客
 
-### [#Hexo操作](#Hexo操作)Hexo操作
+### [Hexo操作](#Hexo操作)
 
 在MWeb中完成写作后, 进入hexo进行发布操作
     
@@ -231,16 +230,16 @@ node-v
 
 > [Github支持的Markdown语法](https://help.github.com/cn/github/writing-on-github/basic-writing-and-formatting-syntax)
 
-## [#结束语](#结束语)结束语
+## [结束语](#结束语)
 
 自此就完成了个人博客的所有环境配置, 开始利用Markdown轻松记录内容了.
 后续还会补充一些关于Next Theme模板的修改配置, 站点修改配置之类的内容, 等有时间再做, :)
 
-## [#补充1-多设备同步编辑](#补充1-多设备同步编辑)补充1: 多设备同步编辑
+## [补充1 多设备同步编辑](#补充1-多设备同步编辑)
 
 因为hexo的架构环境在本地, 在Github上发布的只是public文件夹, 所以如果想要在2台以上的电脑上同时来维护同一份博客, 就需要构建多设备同步的编辑环境.
 
-### [#构建思路](#构建思路)构建思路
+### [构建思路](#构建思路)
 
 1. 假设在公司和家中分别有A,B两台电脑
 2. A电脑已经完成了本篇所讲述的hexo环境搭建, 并且能把public文件夹网站文件发布到github的库master主分支
@@ -248,9 +247,9 @@ node-v
 4. 然后在B电脑将将分支branch_name的内容全部获取下来, 再更新内容时, 将重新发布public文件夹并发布到master分支
 5. 核心思路: 网站文件 存在master分支, 所有源文件存在branch_name分支
 
-### [#操作步骤](#操作步骤)操作步骤
+### [操作步骤](#操作步骤)
 
-#### [#首先-假设A电脑已经完成了hexo搭建和github连接-进入根目录hexo](#首先-假设A电脑已经完成了hexo搭建和github连接-进入根目录hexo)首先, 假设A电脑已经完成了hexo搭建和github连接, 进入根目录hexo
+#### [首先 假设A电脑已经完成了hexo搭建和github连接 进入根目录hexo](#首先-假设A电脑已经完成了hexo搭建和github连接-进入根目录hexo)
 
 ```    
     cd hexo
@@ -263,7 +262,7 @@ node-v
 ```
     
 
-##### [#然后-在B电脑部署git环境和node-js环境-在某个文件夹下-比如-cd](#然后-在B电脑部署git环境和node-js环境-在某个文件夹下-比如-cd)然后, 在B电脑部署git环境和node.js环境, 在某个文件夹下, 比如 cd ~
+##### [然后 在B电脑部署git环境和node-js环境 在某个文件夹下 比如cd](#然后-在B电脑部署git环境和node-js环境-在某个文件夹下-比如-cd)
 
     
 
@@ -285,7 +284,7 @@ git clone-b branch_name https://github.com/Github_username/Github_username.githu
 
 此时环境搭建完成
 
-##### [#在B电脑完成写作之后](#在B电脑完成写作之后)在B电脑完成写作之后
+##### [在B电脑完成写作之后](#在B电脑完成写作之后)
     
 ```
     hexo g -d # 重新生成public文件夹, 并发布到 master分支
@@ -293,7 +292,7 @@ git clone-b branch_name https://github.com/Github_username/Github_username.githu
     git commit -m "这里填写你本次提交的备注，内容随意"
     git push origin branch_name # 更新发布到 branch_name 分支上
 ```
-#### [#回到A电脑-用以下指令获取branch-name分支的更新](#回到A电脑-用以下指令获取branch-name分支的更新)回到A电脑, 用以下指令获取branch_name分支的更新
+#### [回到A电脑 用以下指令获取branch-name分支的更新](#回到A电脑-用以下指令获取branch-name分支的更新)
 
     
 
@@ -315,12 +314,11 @@ git pull https://github.com/Github_username/Github_username.github.io branch_nam
 
 接下来就周而复始了.
 
-## [#补充2-生成ssh密钥文件增加连接安全](#补充2-生成ssh密钥文件增加连接安全)补充2: 生成ssh密钥文件增加连接安全
+## [补充2 生成ssh密钥文件增加连接安全](#补充2-生成ssh密钥文件增加连接安全)
 
 Github采用公钥和私钥配对来提升安全性
 
-### [#在本地电脑上产生ssh密钥文件](#在本地电脑上产生ssh密钥文件)在本地电脑上产生ssh密钥文件
-
+### [在本地电脑上产生ssh密钥文件](#在本地电脑上产生ssh密钥文件)
 
     git config --global user.name "替换成你的GitHub用户名"
     git config --global user.email "替换成你的GitHub注册邮箱"
@@ -329,7 +327,7 @@ Github采用公钥和私钥配对来提升安全性
     ls # 会看到至少2个文件 id_rsa(私钥文件) id_rsa.pub(公钥文件)
     
 
-### [#在Github中填写公钥文件](#在Github中填写公钥文件)在Github中填写公钥文件
+### [在Github中填写公钥文件](#在Github中填写公钥文件)
 
 1. 如果在Mac下, 在访达中 Shift+Command+G 输入 ~/.ssh 可以打开 .shh文件夹
 2. 利用文本编辑器打开 id_rsa.pub 文件, 复制所有内容
