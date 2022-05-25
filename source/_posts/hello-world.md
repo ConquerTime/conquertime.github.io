@@ -346,7 +346,7 @@ publish_blog() {
     hexo d;
     git add .;
     git commit -m "更新";
-    git push origin source;
+    git push;
     echo 发布完成;
   };
 ```
