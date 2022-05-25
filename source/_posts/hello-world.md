@@ -337,3 +337,16 @@ Github采用公钥和私钥配对来提升安全性
 ![](/images/16534688433589.jpg)
 ![](/images/16534688473948.jpg)
 ![](/images/16534688517631.jpg)
+
+自动发布和源码同步
+```shell
+publish_blog() {
+    cd /Users/zhouyangdong/Documents/experiment/conquerTime;
+    git checkout source;
+    hexo d;
+    git add .;
+    git commit -m "更新";
+    git push origin source;
+    echo 发布完成;
+  };
+```
