@@ -5,6 +5,7 @@ categories: 项目案例
 tags:
   - Hexo
   - Quiet
+cover: http://p19.qhimg.com/bdr/__85/t016b606c0891e54d05.jpg
 ---
 
 今天介绍下本博客系统搭建工具组合. 
@@ -341,7 +342,7 @@ Github采用公钥和私钥配对来提升安全性
 自动发布和源码同步
 ```shell
 publish_blog() {
-    cd /Users/zhouyangdong/Documents/experiment/conquerTime;
+    cd 项目路径;
     git checkout source;
     hexo d;
     git add .;

@@ -7,7 +7,7 @@ author: DONG
 # 网站关键字
 keyword: DONG的白日密语, js
 #false是否开启文章背景图显示(随机图片)
-is_article_img: false  
+is_article_img: true  
 # 网站描述
 web_description: 描述
 # 导航名称
@@ -88,4 +88,4 @@ linksList:
   }
 
 #默认的cover (默认缩略图) 在没有填写（这里可以替换（可以是api也可以是固定的图））
-default_cover: http://eett.cc/pictures?type=pc&category=fengjing
+default_cover:  https://tuapi.eees.cc/api.php?type=url&category=fengjing
